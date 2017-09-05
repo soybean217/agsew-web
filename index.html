@@ -20,6 +20,18 @@
     <!--[if lte IE 9]><!-->
     <script src='Scripts/html5shiv.min.js'></script>
     <!--<![endif]-->
+    <style type="text/css">
+    .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    }
+    .row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+    }
+    </style>
   </head>
   <body>
     <div class="site">
@@ -46,8 +58,8 @@
                   <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                       <li class="active"><a href="#home">首页</a></li>
-                      <li><a href="#about">绣花机主</a></li>
-                      <li><a href="#about">制版师</a></li>
+                      <li><a href="#tailor">绣花机主</a></li>
+                      <li><a href="#artist">制版师</a></li>
                       <li><a href="#contact">联系方式</a></li>
                       <li class="audio-toggle"><a href="#"><i class="fa fa-volume-up"></i></a></li>
                     </ul>
@@ -74,7 +86,7 @@
                                 <p>舒适，不撞衫</p>
                                 </div> <!-- .section-heading -->
                                 <div class="section-content">
-                                  <a class="btn btn-pink m-y-5" href="#about">了解更多</a>
+                                  <a class="btn btn-pink m-y-5" href="#tailor">了解更多</a>
                                   <a class="btn btn-warning m-y-5" href="#download">开始使用</a>
                                   </div> <!-- .section-content -->
                                 </div>
@@ -87,7 +99,46 @@
                             </div>
                           </div>
                           </div> <!-- #home -->
-                          <div id="about" class="section p-a-0 align-c">
+                          <div id="tailor" class="section p-a-0 align-c">
+                            <div class="container-fluid p-x-0">
+                              <div class="row">
+                                
+                                <div class="col-xs-12 col-sm-6 block-pink p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
+                                  <div class="col-inner p-y-50-sm-min p-y-30-xs-max max-width m-x-auto-xs-max">
+                                    <div class="icon-box _center">
+                                      <div class="icon-box-media">
+                                        <img src="Picture/crown.png" alt="" data-sr="bottom">
+                                      </div>
+                                      <div class="icon-box-heading">
+                                        <a class="btn btn-warning m-y-5" href="#about"><h3>绣花机主登录</h3></a>
+                                      </div>
+                                      <div class="icon-box-content">
+                                        <p>为有个性化需求的用户进行有偿绣花制版</br></p>
+                                        <p style="display:none;"><img src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQHy8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyQVNyanhnMGlkYWkxMDAwMHcwMzQAAgTzMaVZAwQAAAAA"></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 block-invert p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
+                                  <div class="col-inner p-y-50-sm-min p-y-30-xs-max max-width m-x-auto-xs-max">
+                                    <div class="icon-box _center">
+                                      <div class="icon-box-media">
+                                        <img src="Picture/rocket.png" alt="" data-sr="bottom">
+                                      </div>
+                                      <div class="icon-box-heading">
+                                        <h3>绣花机主注册(微信扫描以下二维码)</h3>
+                                      </div>
+                                      <div class="icon-box-content">
+                                        <p>利用家中现有绣花设备为邻居提供有偿服务</br></p>
+                                        <p><img src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQHy8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAyQVNyanhnMGlkYWkxMDAwMHcwMzQAAgTzMaVZAwQAAAAA"></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="artist" class="section p-a-0 align-c">
                             <div class="container-fluid p-x-0">
                               <div class="row">
                                 <div class="col-xs-12 col-sm-6 block-invert p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
@@ -97,10 +148,10 @@
                                         <img src="Picture/rocket.png" alt="" data-sr="bottom">
                                       </div>
                                       <div class="icon-box-heading">
-                                        <h3>绣花机主</h3>
+                                        <h3>制版师注册-即将推出</h3>
                                       </div>
                                       <div class="icon-box-content">
-                                        <p>利用家中现有绣花设备为邻居提供有偿服务</br></p>
+                                        <p>为有个性化需求的用户进行有偿绣花制版</br></p>
                                       </div>
                                     </div>
                                   </div>
@@ -112,7 +163,7 @@
                                         <img src="Picture/crown.png" alt="" data-sr="bottom">
                                       </div>
                                       <div class="icon-box-heading">
-                                        <h3>制版师</h3>
+                                        <h3>制版师登录-即将推出</h3>
                                       </div>
                                       <div class="icon-box-content">
                                         <p>为有个性化需求的用户进行有偿绣花制版</br></p>
@@ -122,97 +173,97 @@
                                 </div>
                               </div>
                             </div>
-                            </div> <!-- #about -->
-                            <div id="download" class="section block-primary align-c">
+                          </div>
+                          <div id="download" class="section block-primary align-c">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-xs-12">
+                                  <div class="col-inner">
+                                    <div class="section-heading">
+                                      <h4>即将开放付费测试</h4>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div> <!-- #download -->
+                            <div id="contact" class="section block-default">
                               <div class="container">
+                                <div class="section-heading text-center">
+                                  <h2>联系方式</h2>
+                                </div>
                                 <div class="row">
-                                  <div class="col-xs-12">
-                                    <div class="col-inner">
-                                      <div class="section-heading">
-                                        <h4>即将开放付费测试</h4>
+                                  <div class="col-xs-12 col-sm-4 block-invert p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
+                                    <div class="col-inner p-y-50-sm-min p-y-30-xs-max max-width m-x-auto-xs-max">
+                                      <div class="icon-box _center">
+                                        <div class="icon-box-media">
+                                          <img src="Picture/mobile.png" alt="" data-sr="bottom">
+                                        </div>
+                                        <div class="icon-box-heading">
+                                          <h4>电话</h4>
+                                          <h4>Phone Number</h4>
+                                        </div>
+                                        <div class="icon-box-content font-sub font-italic">
+                                          <span>(+86) 0755-23604594</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-4 block-pink p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
+                                    <div class="col-inner p-y-50-sm-min p-y-30-xs-max max-width m-x-auto-xs-max">
+                                      <div class="icon-box _center">
+                                        <div class="icon-box-media">
+                                          <img src="Picture/mail.png" alt="" data-sr="bottom">
+                                        </div>
+                                        <div class="icon-box-heading">
+                                          <h4>电子邮件</h4>
+                                          <h4>Email Address</h4>
+                                        </div>
+                                        <div class="icon-box-content font-sub font-italic">
+                                          <span>fuming@agt.vc</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-12 col-sm-4 block-light p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
+                                    <div class="col-inner p-y-50-sm-min p-y-30-xs-max max-width m-x-auto-xs-max">
+                                      <div class="icon-box _center">
+                                        <div class="icon-box-media">
+                                          <img src="Picture/pin.png" alt="" data-sr="bottom">
+                                        </div>
+                                        <div class="icon-box-heading">
+                                          <h4>办公地址</h4>
+                                          <h4>Business Address</h4>
+                                        </div>
+                                        <div class="icon-box-content font-sub font-italic">
+                                          <span>深圳福田沙嘴路韵动家园B2607</span>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                              </div> <!-- #download -->
-                              <div id="contact" class="section block-default">
+                              </div> <!-- #contact -->
+                              </main> <!-- .site-main -->
+                              <footer class="site-footer block-invert">
                                 <div class="container">
-                                  <div class="section-heading text-center">
-                                    <h2>联系方式</h2>
-                                  </div>
-                                  <div class="row">
-                                    <div class="col-xs-12 col-sm-4 block-invert p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
-                                      <div class="col-inner p-y-50-sm-min p-y-30-xs-max max-width m-x-auto-xs-max">
-                                        <div class="icon-box _center">
-                                          <div class="icon-box-media">
-                                            <img src="Picture/mobile.png" alt="" data-sr="bottom">
-                                          </div>
-                                          <div class="icon-box-heading">
-                                            <h4>电话</h4>
-                                            <h4>Phone Number</h4>
-                                          </div>
-                                          <div class="icon-box-content font-sub font-italic">
-                                            <span>(+86) 0755-23604594</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4 block-pink p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
-                                      <div class="col-inner p-y-50-sm-min p-y-30-xs-max max-width m-x-auto-xs-max">
-                                        <div class="icon-box _center">
-                                          <div class="icon-box-media">
-                                            <img src="Picture/mail.png" alt="" data-sr="bottom">
-                                          </div>
-                                          <div class="icon-box-heading">
-                                            <h4>电子邮件</h4>
-                                            <h4>Email Address</h4>
-                                          </div>
-                                          <div class="icon-box-content font-sub font-italic">
-                                            <span>fuming@agt.vc</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4 block-light p-x-30-sm-max p-x-60-md-min p-t-20-sm-min align-t-sm-min">
-                                      <div class="col-inner p-y-50-sm-min p-y-30-xs-max max-width m-x-auto-xs-max">
-                                        <div class="icon-box _center">
-                                          <div class="icon-box-media">
-                                            <img src="Picture/pin.png" alt="" data-sr="bottom">
-                                          </div>
-                                          <div class="icon-box-heading">
-                                            <h4>办公地址</h4>
-                                            <h4>Business Address</h4>
-                                          </div>
-                                          <div class="icon-box-content font-sub font-italic">
-                                            <span>深圳福田沙嘴路韵动家园B2607</span>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <img class="site-footer-logo img-responsive" src="Picture/site-footer-logo.png" data-sr="bottom">
+                                  <!-- <ul class="site-footer-social-list">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#" >Twitter</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">LinkedIn</a></li>
+                                    <li><a href="#">Pinterest</a></li>
+                                  </ul> -->
+                                  <p class="site-footer-copyright"><script>document.write(new Date().getFullYear())</script> @ <a href="#" target="_blank">深圳市再来科技有限公司</a>  | all rights reserved. <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备17045574号</a></p>
                                 </div>
-                                </div> <!-- #contact -->
-                                </main> <!-- .site-main -->
-                                <footer class="site-footer block-invert">
-                                  <div class="container">
-                                    <img class="site-footer-logo img-responsive" src="Picture/site-footer-logo.png" data-sr="bottom">
-                                    <!-- <ul class="site-footer-social-list">
-                                      <li><a href="#">Facebook</a></li>
-                                      <li><a href="#" >Twitter</a></li>
-                                      <li><a href="#">Instagram</a></li>
-                                      <li><a href="#">LinkedIn</a></li>
-                                      <li><a href="#">Pinterest</a></li>
-                                    </ul> -->
-                                    <p class="site-footer-copyright"><script>document.write(new Date().getFullYear())</script> @ <a href="#" target="_blank">深圳市再来科技有限公司</a>  | all rights reserved. <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备17045574号</a></p>
-                                  </div>
-                                  </footer> <!-- .site-footer -->
-                                </div>
+                                </footer> <!-- .site-footer -->
                               </div>
-                              <script src="Scripts/jquery-1.11.3.min.js"></script>
-                              <script src='Scripts/bootstrap.min.js'></script>
-                              <script src='Scripts/plugin.js'></script>
-                              <script src='Scripts/variable.js'></script>
-                              <script src='Scripts/main.js'></script>
-                            </body>
-                          </html>
+                            </div>
+                            <script src="Scripts/jquery-1.11.3.min.js"></script>
+                            <script src='Scripts/bootstrap.min.js'></script>
+                            <script src='Scripts/plugin.js'></script>
+                            <script src='Scripts/variable.js'></script>
+                            <script src='Scripts/main.js'></script>
+                          </body>
+                        </html>
